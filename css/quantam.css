@@ -1,0 +1,332 @@
+/* fonts link */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;500;700&family=Old+Standard+TT:wght@400;700;800&family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--white);
+    overflow-x: hidden;
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --black2: #3A3B3E;
+    --dark-blue: #002F67;
+    --dark-blue-heading: #043571;
+    --blue: #0E5BB8;
+    --body-bg: rgba(245, 245, 247, 1);
+    --gray: rgba(255, 255, 255, 0.75);
+    --dark-gray: #5E6064;
+    --green: #117A28;
+    --red-gradient: linear-gradient(95.04deg, #EB4F56 0%, #9D66E9 100%);
+
+    --inter: 'Inter', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+    --old-Satandard: 'Old Standard TT', serif;
+    --open-sans: 'Open Sans', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+}
+
+section {
+    padding: 60px 0px;
+}
+
+.highlight {
+    font-weight: 600;
+    color: var(--dark-blue);
+}
+
+.heading {
+    font-size: 24px;
+    color: var(--dark-gray);
+    font-weight: 600;
+    font-family: var(--poppins);
+    margin-bottom: 10px;
+}
+.main-heading {
+    text-align: center;
+    font-weight: 800;
+    font-family: var(--poppins);
+    font-size: 42px;
+    color: var(--dark-blue-heading);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* header area start */
+.navbar {
+    background: var(--white);
+    color: var(--black);
+    box-shadow: 0px 2px 3px rgba(197, 200, 204, 0.2);
+    padding: 15px 0px;
+    position: fixed;
+    z-index: 99;
+    border-radius: 0px 0px 28px 28px;
+    top: 0;
+    width: 100%;
+}
+
+nav.navbar.navbar-expand-xl {
+    padding: 20px 0px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-weight: 400;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--blue);
+}
+
+.navbar .nav-link.active {
+    color: var(--blue);
+}
+
+.navbar .navbar-nav .nav-link.contact-us {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    border-radius: 4px;
+}
+
+span.navbar-toggler-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+/* breadcrmb area */
+.breadcrum-wrapper .container {
+    position: relative;
+}
+
+.breadcrum-wrapper .breadcrumb {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0px;
+    z-index: 1;
+
+}
+
+.breadcrum-wrapper .breadcrumb li,
+.breadcrum-wrapper .breadcrumb li a {
+    color: var(--white);
+}
+
+
+/* hero area */
+.hero-area {
+    background: url(../img/globe2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    color: var(--white);
+    padding-top: 200px;
+}
+
+.hero-area .heading {
+    color: var(--white);
+}
+
+.hero-area .book-a-demo-btn {
+    padding: 5px 20px;
+    background-color: var(--white);
+    color: var(--dark-blue-heading);
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+.hero-area .book-a-demo-btn i {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+/* quantam step area */
+.quantam-step-area .quantum-image {
+    width: 100%;
+
+}
+
+.quantam-step-area {
+    padding: 50px 0px;
+}
+
+.quantam-step-area img {
+    border-radius: 4px;
+}
+
+
+.quantam-step-area .ul {
+    list-style: none;
+}
+
+.quantam-step-area ul li i {
+    font-size: 18px;
+    color: var(--dark-blue-heading);
+    margin-right: 10px;
+}
+
+.quantam-step-area ul li {
+    margin-bottom: 10px;
+}
+
+.quantam-step-area .row,
+.events-area .row {
+    align-items: center;
+}
+
+.get-started-btn,
+.get-help-btn {
+    padding: 5px 20px;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    margin-top: 30px;
+    border: 1px solid transparent;
+    transition: .5s ease;
+}
+
+.get-started-btn:hover,
+.get-help-btn:hover {
+    background: transparent;
+    border: 1px solid var(--dark-blue);
+    color: var(--dark-blue);
+}
+
+.events-area ul {
+    list-style: disc;
+    padding-left: 15px;
+}
+
+.events-area ul li {
+    margin-bottom: 10px;
+}
+
+.events-area ul li::marker {
+    color: var(--dark-blue);
+    display: block;
+}
+
+.events-area img {
+    border-radius: 4px;
+}
+
+
+
+.and-more-area .much-more-content {
+    width: 600px;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* our partner area */
+.our-partner {
+    background: url(../img/globe.jpg);
+    background-position: bottom;
+    height: 700px;
+    padding-top: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.our-partner hr {
+    opacity: 1;
+    width: 200px;
+    display: block;
+    margin: auto;
+    background-color: var(--white);
+    height: 3px;
+}
+
+.our-partner .row {
+    align-items: center;
+}
+
+.our-partner img {
+    display: block;
+    margin: auto;
+    width: 500px;
+    margin-top: 40px;
+}
+
+.our-partner .heading {
+    color: var(--white);
+    text-align: center;
+}
+
+/* footer area */
+.footer-area {
+    color: var(--white);
+    background-color: var(--black);
+    padding: 100px 0px;
+}
+
+.footer-area a {
+    color: #C9C9C9;
+    font-size: 16px;
+}
+
+.footer-area ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-area .info-heading {
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.footer-area .info i {
+    margin-right: 10px;
+}
+
+@media screen and (max-width:767px) {
+    .our-partner img {
+        width: 100%;
+    }
+
+    .breadcrum-wrapper .breadcrumb {
+        left: 15px;
+    }
+
+    .our-partner {
+        background-position: left bottom;
+        height: 520px;
+        padding-top: 50px;
+    }
+
+    a.navbar-brand img {
+        width: 100px;
+    }
+
+    nav.navbar.navbar-expand-xl {
+        padding: 10px 0px;
+    }
+}
