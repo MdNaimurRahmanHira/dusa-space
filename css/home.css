@@ -35,6 +35,7 @@ ul {
     --body-bg: rgba(245, 245, 247, 1);
     --gray: rgba(255, 255, 255, 0.75);
     --dark-gray: #5E6064;
+    --green: #117A28;
     --red-gradient: linear-gradient(95.04deg, #EB4F56 0%, #9D66E9 100%);
 
     --inter: 'Inter', sans-serif;
@@ -43,6 +44,7 @@ ul {
     --open-sans: 'Open Sans', sans-serif;
     --poppins: 'Poppins', sans-serif;
 }
+
 
 section {
     padding: 40px 0px;
@@ -123,7 +125,7 @@ span.navbar-toggler-icon {
 
 
 .hero-area .hero-content {
-    max-width: 90%;
+    max-width: 50%;
 }
 
 /* 
@@ -173,13 +175,28 @@ span.navbar-toggler-icon {
 }
 
 .hero-area h2 {
-    color: var(--dark-blue);
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: var(--white);
-    font-family: 'Old Standard TT', sans-serif;
+    background: linear-gradient(to right, #EB4F56 16%, #9D66E9 32%, #17c7bf 48%, #EB4F56 64%, #9D66E9 80%, #17c7bf 96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    font-family: var(--poppins);
     font-weight: 700;
     font-size: 62px;
     text-align: center;
+    text-transform: uppercase;
+    animation: gradient 10s linear infinite;
+    transition: .4s ease;
+
+}
+
+@keyframes gradient {
+    to {
+        background-position: 100% center;
+    }
+}
+
+.hero-area p {
+    color: var(--white);
 }
 
 .hero-area .learn-more-btn {
@@ -389,13 +406,13 @@ span.navbar-toggler-icon {
 /* our partner area */
 .our-partner {
     background: url(../img/globe.jpg);
-    background-position: bottom ;
+    background-position: bottom;
     height: 700px;
     padding-top: 100px;
     background-repeat: no-repeat;
     background-size: cover;
 }
- 
+
 
 .our-partner hr {
     opacity: 1;
@@ -416,6 +433,7 @@ span.navbar-toggler-icon {
     width: 500px;
     margin-top: 40px;
 }
+
 .our-partner .heading {
     color: var(--white);
     text-align: center;
@@ -494,11 +512,12 @@ span.navbar-toggler-icon {
         font-size: 36px;
         -webkit-text-stroke-width: 1px;
     }
-   
+
 
     .navbar {
         padding: 10px 0px;
     }
+
     nav.navbar.navbar-expand-xl {
         padding: 10px 0px;
     }
@@ -560,6 +579,7 @@ span.navbar-toggler-icon {
         line-height: 33px;
         overflow-wrap: break-word;
     }
+
     .our-partner img {
         width: 100%;
     }
