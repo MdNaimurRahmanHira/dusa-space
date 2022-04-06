@@ -54,6 +54,11 @@ section {
     color: var(--dark-blue);
 }
 
+img {
+    width: 100%;
+    border-radius: 4px;
+}
+
 .heading {
     font-size: 24px;
     color: var(--dark-gray);
@@ -61,6 +66,7 @@ section {
     font-family: var(--poppins);
     margin-bottom: 10px;
 }
+
 .main-heading {
     text-align: center;
     font-weight: 800;
@@ -69,6 +75,13 @@ section {
     color: var(--dark-blue-heading);
     margin-bottom: 30px;
     text-transform: uppercase;
+}
+
+.read-more {
+    color: var(--blue);
+    font-weight: 500;
+    font-family: var(--poppins);
+    cursor: pointer;
 }
 
 /* header area start */
@@ -167,6 +180,41 @@ span.navbar-toggler-icon {
     margin-left: 10px;
 }
 
+/* digital experience service area  */
+.digital-exp-area p {
+    height: 150px;
+    overflow: hidden;
+}
+
+.digital-exp-area .card {
+    padding: 50px 20px;
+    border-radius: 12px;
+}
+
+.digital-exp-area .card img {
+    width: 100px;
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.card {
+    box-shadow: 1px 1px 4px #00000020;
+    border: none;
+    margin-top: 40px;
+}
+
+.digital-exp-area .card .card-heading h4 {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.digital-exp-area .bottom-text {
+    margin-top: 40px;
+    text-align: center;
+}
+
 /* quantam step area */
 .quantam-step-area .quantum-image {
     width: 100%;
@@ -238,10 +286,15 @@ span.navbar-toggler-icon {
 
 
 
-.and-more-area .much-more-content {
+.much-more-content {
     width: 600px;
     display: block;
     margin: auto;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.much-more-content .heading {
     text-align: center;
 }
 
