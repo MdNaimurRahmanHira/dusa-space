@@ -43,7 +43,7 @@ ul {
     --montserrat: 'Montserrat', sans-serif;
     --old-Satandard: 'Old Standard TT', serif;
     --open-sans: 'Open Sans', sans-serif;
-    --poppins: 'Poppins', sans-serif;
+    --arial: arial, sans-serif;
 }
 
 
@@ -55,12 +55,12 @@ section {
     font-size: 32px;
     color: var(--dark-blue);
     font-weight: 600;
-    font-family: var(--poppins);
+    font-family: var(--arial);
     margin-bottom: 25px;
 }
 
 p {
-    font-family: var(--poppins);
+    font-family: var(--arial);
 
 }
 
@@ -121,15 +121,22 @@ span.navbar-toggler-icon {
 
 /* hero are star */
 .hero-area {
-    margin-top: 240px;
-    width: 80%;
-    position: absolute;
-    display: flex;
+    margin-top: 60px;
+    width: 100%;
+    height: 800px;
+    /* position: absolute;
+    left: 50%;
     top: 0;
+    transform: translate(-50%, 0); */
+
+    border-radius: 0px 0px 28px 28px;
+    background: url(../video/ezgif.com-gif-maker.gif);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
     align-items: center;
     justify-content: center;
-    left: 50%;
-    transform: translate(-50%, 0);
+
 
 }
 
@@ -139,26 +146,23 @@ span.navbar-toggler-icon {
 }
 
 /* 
-.owl-carousel.banner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    overflow: hidden;
-    z-index: -1;
-} */
 .banner {
     height: 800px;
+    overflow: hidden;
 }
 
 .banner video {
     object-fit: cover;
-    object-position: center;
+    object-position: bottom;
     border-radius: 0px 0px 28px 28px;
 }
 
 .banner img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 0px 0px 28px 28px;
     border-radius: 0px 0px 28px 28px;
 }
 
@@ -182,7 +186,7 @@ span.navbar-toggler-icon {
     height: 50px;
     background-color: rgba(255, 255, 255, 0.50);
     border-radius: 50%;
-}
+} */
 
 .hero-area h2 {
     /* background: linear-gradient(to right, #EB4F56 16%, #9D66E9 32%, #17c7bf 48%, #EB4F56 64%, #9D66E9 80%, #17c7bf 96%);
@@ -190,7 +194,7 @@ span.navbar-toggler-icon {
     -webkit-text-fill-color: transparent;
     background-size: 200% auto; */
     color: var(--white);
-    font-family: var(--poppins);
+    font-family: var(--arial);
     font-weight: 700;
     font-size: 62px;
     text-align: center;
@@ -265,7 +269,7 @@ span.navbar-toggler-icon {
     width: 48%;
 } */
 .service-area .row h2 {
-    font-family: var(--poppins);
+    font-family: var(--arial);
     font-style: normal;
     font-weight: 700;
     text-transform: uppercase;
@@ -274,7 +278,7 @@ span.navbar-toggler-icon {
 }
 
 .service-area .row p {
-    font-family: var(--poppins);
+    font-family: var(--arial);
     font-weight: 400;
     font-size: 16px;
     line-height: 25px;
@@ -283,7 +287,7 @@ span.navbar-toggler-icon {
 }
 
 .service-area .row h6 {
-    font-family: var(--poppins);
+    font-family: var(--arial);
     font-weight: 700;
     font-size: 22px;
     color: var(--black);
@@ -292,16 +296,18 @@ span.navbar-toggler-icon {
 
 .service-area .row ul {
     padding-left: 15px;
-    font-family: var(--poppins);
+    font-family: var(--arial);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     color: var(--light-blue);
 }
-.service-area .row ul{
+
+.service-area .row ul {
     list-style: unset;
 }
+
 .service-area .row ul li::marker {
     color: var(--black2);
     padding: 7px;
@@ -311,7 +317,7 @@ span.navbar-toggler-icon {
 .service-area .row .learn-more {
     border: 2px solid var(--dark-blue);
     padding: 5px 20px;
-    font-family: var(--poppins);
+    font-family: var(--arial);
     font-weight: 500;
     font-size: 16px;
     color: var(--dark-blue);
@@ -345,7 +351,7 @@ span.navbar-toggler-icon {
 .testimonial-area h2 {
     text-align: center;
     font-size: 42px;
-    font-family: var(--poppins);
+    font-family: var(--arial);
     color: var(--dark-blue-heading);
     font-weight: 600;
     margin-bottom: 60px;
@@ -508,7 +514,11 @@ span.navbar-toggler-icon {
 
 
 /* responsive area */
-
+@media screen and (max-width:1399px) {
+    .navbar-brand {
+        width: 200px;
+    }
+}
 
 @media screen and (max-width:991px) {
     .hero-area h2 {
@@ -520,7 +530,7 @@ span.navbar-toggler-icon {
         width: 140px;
     }
 
-    .banner video {
+    /* .banner video {
         height: 100%;
         object-fit: cover;
         object-position: bottom;
@@ -528,8 +538,11 @@ span.navbar-toggler-icon {
 
     .banner {
         height: 600px;
-    }
+    } */
 
+    .hero-area p {
+        width: 100%;
+    }
 
 
     .service-1 .left-side.col-lg-6,
@@ -567,9 +580,9 @@ span.navbar-toggler-icon {
         width: 120px;
     }
 
-    .banner {
+    /* .banner {
         height: 450px;
-    }
+    } */
 
     .secure-storage-area {
         width: 100%;
@@ -584,7 +597,7 @@ span.navbar-toggler-icon {
         margin-top: 150px;
     }
 
-    .banner .owl-nav {
+    /* .banner .owl-nav {
         padding: 0px 10px;
     }
 
@@ -602,18 +615,16 @@ span.navbar-toggler-icon {
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+    } */
 
     .secure-storage-area .content-wrapper {
         position: absolute;
         z-index: 2;
-        top: 0px;
-        left: 0;
         padding: 20px;
         width: 100%;
-        max-width: 400px;
+        max-width: 100%;
         color: var(--white);
-        margin-top: 60px;
+        margin-top: 0px;
     }
 
     .secure-storage-area .content-wrapper h2 {
@@ -648,9 +659,12 @@ span.navbar-toggler-icon {
         width: 100%;
     }
 
-    .banner .owl-nav {
+    /* .banner .owl-nav {
         top: unset;
         bottom: 15%;
+    } */
+    .testimonial-area h2 {
+        font-size: 26px;
     }
 
     .hero-area h2 img {
@@ -663,9 +677,9 @@ span.navbar-toggler-icon {
         margin-top: 100px;
     }
 
-    .banner {
+    /* .banner {
         height: 350px;
-    }
+    } */
 
     .content-wrapper p {
         font-size: 14px;

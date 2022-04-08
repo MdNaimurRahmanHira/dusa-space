@@ -1,7 +1,6 @@
 
 //speed at which text appears and disappears
 const TEXT_UPDATING_SPEED = 55
-
 //duration of type cursor blink animation
 const BLINK_ANIM_DURATION = 2400
 
@@ -10,13 +9,10 @@ const textArr = [
     "Dusa recognised as HFS Hot Vendor 🔥 2022.",
     "Dusa is the best quantum service provider.",
 ]
-
 //index of the current text of the textArr that is being animated
 let currentTextIndex = -1
-
 const myText = document.querySelector(".text")
 const typeCursor = document.querySelector(".cursor")
-
 //add letter with recursion
 const addLetter = (letterIndex) => {
     //if reached the end of the text stop adding letters and animate cursor blink
@@ -31,7 +27,6 @@ const addLetter = (letterIndex) => {
         addLetter(letterIndex + 1)
     }, TEXT_UPDATING_SPEED)
 }
-
 //remove letter with recursion
 const removeLetter = (letterIndex) => {
     //if removed all stop removing letters and call updateText to start animating the next text
@@ -46,7 +41,6 @@ const removeLetter = (letterIndex) => {
         removeLetter(letterIndex - 1)
     }, TEXT_UPDATING_SPEED)
 }
-
 //blink the cursor when not updating text
 const blinkTypeCursor = () => {
     //add blink by adding blink animation class from css
@@ -58,7 +52,6 @@ const blinkTypeCursor = () => {
         removeLetter(textArr[currentTextIndex].length)
     }, BLINK_ANIM_DURATION)
 }
-
 const updateText = () => {
     //change current text index to switch to next text
     currentTextIndex++
@@ -69,10 +62,13 @@ const updateText = () => {
     //call addLetter
     addLetter(0)
 }
-
 //initial text update after 1 seconds
 setTimeout(() => updateText(), 1000)
 
+
+ //banner fade in animation
+ var content = document.querySelector('.hero-area');
+ TweenMax.fromTo(content, 2, {opacity: 0, y: 50}, {opacity: 1, y: 0});
 
 
 // fading animation on scroll start
