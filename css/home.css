@@ -566,12 +566,18 @@ span.navbar-toggler-icon {
         font-size: 36px;
         -webkit-text-stroke-width: 1px;
     }
-
-
+    .hero-area{
+        height: 500px;
+    }
+    .hero-area p {
+        font-size: 18px;
+    }
     .navbar {
         padding: 10px 0px;
     }
-
+    .navbar-brand {
+        width: unset;
+    }
     nav.navbar.navbar-expand-xl {
         padding: 10px 0px;
     }
@@ -594,7 +600,7 @@ span.navbar-toggler-icon {
     }
 
     .hero-area {
-        margin-top: 150px;
+        margin-top: 30px;
     }
 
     /* .banner .owl-nav {
@@ -628,7 +634,7 @@ span.navbar-toggler-icon {
     }
 
     .secure-storage-area .content-wrapper h2 {
-        line-height: 33px;
+        line-height: normal;
         overflow-wrap: break-word;
     }
 
@@ -655,7 +661,6 @@ span.navbar-toggler-icon {
     }
 
     .hero-area {
-        margin-top: 130px;
         width: 100%;
     }
 
@@ -673,13 +678,7 @@ span.navbar-toggler-icon {
 }
 
 @media screen and (max-width:450px) {
-    .hero-area {
-        margin-top: 100px;
-    }
-
-    /* .banner {
-        height: 350px;
-    } */
+    
 
     .content-wrapper p {
         font-size: 14px;

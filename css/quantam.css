@@ -162,8 +162,8 @@ span.navbar-toggler-icon {
     background: url(../img/globe2.jpg);
     background-position: center;
     background-size: cover;
-    height: 600px;
     color: var(--white);
+    padding-bottom: 100px;
     padding-top: 200px;
 }
 
@@ -191,10 +191,6 @@ span.navbar-toggler-icon {
 }
 
 /* digital experience service area  */
-.digital-exp-area p {
-    height: 150px;
-    overflow: hidden;
-}
 
 .digital-exp-area .card {
     padding: 50px 20px;
@@ -350,6 +346,9 @@ span.navbar-toggler-icon {
     background-color: var(--black);
     padding: 100px 0px;
 }
+.footer-area .footer-logo{
+    max-width: 200px;
+}
 
 .footer-area a {
     color: #C9C9C9;
@@ -381,7 +380,9 @@ span.navbar-toggler-icon {
     .our-partner img {
         width: 100%;
     }
-
+    .navbar-brand {
+        width: unset;
+    }
     .breadcrum-wrapper .breadcrumb {
         left: 15px;
     }
