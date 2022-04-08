@@ -68,6 +68,7 @@ $(document).ready(function () {
         });
     });
 
+  
 
     gsap.registerPlugin(ScrollTrigger);
     const canvas = document.getElementById("scroll-animation");
