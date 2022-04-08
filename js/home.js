@@ -38,8 +38,13 @@ $(document).ready(function () {
 
         });
     });
+    //banner fade in animation
+    var content = document.querySelector('.hero-area');
+    TweenMax.fromTo(content, 2, {opacity: 0, y: 50}, {opacity: 1, y: 0});
 
-    // fading animation on scroll start
+    
+
+    // fading animation on scroll start from here
     const boxes = gsap.utils.toArray('.fadeUp');
     // Set things up
     gsap.set(boxes, {
@@ -68,7 +73,9 @@ $(document).ready(function () {
         });
     });
 
+  
 
+    // canvas animation of the satelite images
     gsap.registerPlugin(ScrollTrigger);
     const canvas = document.getElementById("scroll-animation");
     const context = canvas.getContext("2d");
@@ -133,8 +140,6 @@ $(document).ready(function () {
 
     }
 
-    window.onload = function () {
-        document.getElementById('banner-video').play();
-    };
+    
 
 });

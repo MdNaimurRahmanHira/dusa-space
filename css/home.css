@@ -30,6 +30,7 @@ ul {
     --black: #000;
     --black2: #3A3B3E;
     --dark-blue: #002F67;
+    --light-blue: #283550;
     --dark-blue-heading: #043571;
     --blue: #0E5BB8;
     --body-bg: rgba(245, 245, 247, 1);
@@ -42,7 +43,7 @@ ul {
     --montserrat: 'Montserrat', sans-serif;
     --old-Satandard: 'Old Standard TT', serif;
     --open-sans: 'Open Sans', sans-serif;
-    --poppins: 'Poppins', sans-serif;
+    --arial: arial, sans-serif;
 }
 
 
@@ -54,15 +55,20 @@ section {
     font-size: 32px;
     color: var(--dark-blue);
     font-weight: 600;
-    font-family: var(--poppins);
+    font-family: var(--arial);
     margin-bottom: 25px;
+}
+
+p {
+    font-family: var(--arial);
+
 }
 
 /* header area start */
 .navbar {
     background: var(--white);
     color: var(--black);
-    box-shadow: 0px 2px 3px rgba(197, 200, 204, 0.2);
+    box-shadow: 0px 2px 6px rgb(0 0 0 / 25%);
     padding: 15px 0px;
     position: fixed;
     z-index: 99;
@@ -77,6 +83,10 @@ nav.navbar.navbar-expand-xl {
 
 a.navbar-brand img {
     width: 100%;
+}
+
+.navbar-brand {
+    width: 300px;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -111,44 +121,48 @@ span.navbar-toggler-icon {
 
 /* hero are star */
 .hero-area {
-    margin-top: 240px;
-    width: 80%;
-    position: absolute;
-    display: flex;
+    margin-top: 60px;
+    width: 100%;
+    height: 800px;
+    /* position: absolute;
+    left: 50%;
     top: 0;
+    transform: translate(-50%, 0); */
+
+    border-radius: 0px 0px 28px 28px;
+    background: url(../video/ezgif.com-gif-maker.gif);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
     align-items: center;
     justify-content: center;
-    left: 50%;
-    transform: translate(-50%, 0);
+
 
 }
 
 
 .hero-area .hero-content {
-    max-width: 50%;
+    max-width: 100%;
 }
 
 /* 
-.owl-carousel.banner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    overflow: hidden;
-    z-index: -1;
-} */
 .banner {
     height: 800px;
+    overflow: hidden;
 }
 
 .banner video {
     object-fit: cover;
-    object-position: center;
+    object-position: bottom;
     border-radius: 0px 0px 28px 28px;
 }
 
 .banner img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 0px 0px 28px 28px;
     border-radius: 0px 0px 28px 28px;
 }
 
@@ -172,14 +186,15 @@ span.navbar-toggler-icon {
     height: 50px;
     background-color: rgba(255, 255, 255, 0.50);
     border-radius: 50%;
-}
+} */
 
 .hero-area h2 {
-    background: linear-gradient(to right, #EB4F56 16%, #9D66E9 32%, #17c7bf 48%, #EB4F56 64%, #9D66E9 80%, #17c7bf 96%);
+    /* background: linear-gradient(to right, #EB4F56 16%, #9D66E9 32%, #17c7bf 48%, #EB4F56 64%, #9D66E9 80%, #17c7bf 96%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-size: 200% auto;
-    font-family: var(--poppins);
+    background-size: 200% auto; */
+    color: var(--white);
+    font-family: var(--arial);
     font-weight: 700;
     font-size: 62px;
     text-align: center;
@@ -189,6 +204,13 @@ span.navbar-toggler-icon {
 
 }
 
+.hero-area p b {
+    color: var(--white);
+    text-align: right;
+    display: block;
+    font-size: 18px;
+}
+
 @keyframes gradient {
     to {
         background-position: 100% center;
@@ -196,7 +218,13 @@ span.navbar-toggler-icon {
 }
 
 .hero-area p {
-    color: var(--white);
+    color: #d3deeb;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    width: 800px;
+    display: block;
+    margin: auto;
 }
 
 .hero-area .learn-more-btn {
@@ -210,7 +238,6 @@ span.navbar-toggler-icon {
     display: block;
     margin: auto;
 }
-
 
 
 
@@ -241,59 +268,67 @@ span.navbar-toggler-icon {
 .service-area .row .left-side{
     width: 48%;
 } */
-
 .service-area .row h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--arial);
     font-style: normal;
-    font-weight: 500;
-    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 32px;
     color: var(--dark-blue-heading);
 }
 
 .service-area .row p {
-    font-family: 'Open Sans';
+    font-family: var(--arial);
     font-weight: 400;
     font-size: 16px;
     line-height: 25px;
-    color: var(--dark-gray);
     line-height: 25px;
+    color: var(--light-blue);
 }
 
 .service-area .row h6 {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    color: var(--black2);
+    font-family: var(--arial);
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--black);
     margin: 35px 0px 10px;
 }
 
 .service-area .row ul {
     padding-left: 15px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--arial);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-    color: var(--dark-gray);
+    color: var(--light-blue);
+}
+
+.service-area .row ul {
+    list-style: unset;
 }
 
 .service-area .row ul li::marker {
-    color: var(--dark-gray);
+    color: var(--black2);
     padding: 7px;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .service-area .row .learn-more {
     border: 2px solid var(--dark-blue);
     padding: 5px 20px;
-    font-family: 'Poppins';
+    font-family: var(--arial);
     font-weight: 500;
     font-size: 16px;
     color: var(--dark-blue);
     margin-top: 35px;
     border-radius: 0;
+    transition: .4s ease;
+}
 
+.service-area .learn-more:hover {
+    background: var(--dark-blue);
+    color: var(--white);
 }
 
 /* testimonial area */
@@ -306,13 +341,21 @@ span.navbar-toggler-icon {
     padding: 80px 0px;
 }
 
+.testimonial-area .user-name {
+    color: var(--black);
+    font-weight: 600;
+    font-size: 18px;
+    margin: 15px 0px 5px;
+}
+
 .testimonial-area h2 {
     text-align: center;
     font-size: 42px;
-    font-family: var(--poppins);
+    font-family: var(--arial);
     color: var(--dark-blue-heading);
     font-weight: 600;
     margin-bottom: 60px;
+    text-transform: uppercase;
 }
 
 .owl-carousel .testimonial img {
@@ -437,6 +480,8 @@ span.navbar-toggler-icon {
 .our-partner .heading {
     color: var(--white);
     text-align: center;
+    font-size: 46px;
+    margin-bottom: 10px;
 }
 
 
@@ -469,6 +514,12 @@ span.navbar-toggler-icon {
 
 
 /* responsive area */
+@media screen and (max-width:1399px) {
+    .navbar-brand {
+        width: 200px;
+    }
+}
+
 @media screen and (max-width:991px) {
     .hero-area h2 {
         font-size: 42px;
@@ -479,7 +530,7 @@ span.navbar-toggler-icon {
         width: 140px;
     }
 
-    .banner video {
+    /* .banner video {
         height: 100%;
         object-fit: cover;
         object-position: bottom;
@@ -487,8 +538,11 @@ span.navbar-toggler-icon {
 
     .banner {
         height: 600px;
-    }
+    } */
 
+    .hero-area p {
+        width: 100%;
+    }
 
 
     .service-1 .left-side.col-lg-6,
@@ -526,9 +580,9 @@ span.navbar-toggler-icon {
         width: 120px;
     }
 
-    .banner {
+    /* .banner {
         height: 450px;
-    }
+    } */
 
     .secure-storage-area {
         width: 100%;
@@ -543,7 +597,7 @@ span.navbar-toggler-icon {
         margin-top: 150px;
     }
 
-    .banner .owl-nav {
+    /* .banner .owl-nav {
         padding: 0px 10px;
     }
 
@@ -561,18 +615,16 @@ span.navbar-toggler-icon {
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+    } */
 
     .secure-storage-area .content-wrapper {
         position: absolute;
         z-index: 2;
-        top: 0px;
-        left: 0;
         padding: 20px;
         width: 100%;
-        max-width: 400px;
+        max-width: 100%;
         color: var(--white);
-        margin-top: 60px;
+        margin-top: 0px;
     }
 
     .secure-storage-area .content-wrapper h2 {
@@ -607,9 +659,12 @@ span.navbar-toggler-icon {
         width: 100%;
     }
 
-    .banner .owl-nav {
+    /* .banner .owl-nav {
         top: unset;
         bottom: 15%;
+    } */
+    .testimonial-area h2 {
+        font-size: 26px;
     }
 
     .hero-area h2 img {
@@ -622,9 +677,9 @@ span.navbar-toggler-icon {
         margin-top: 100px;
     }
 
-    .banner {
+    /* .banner {
         height: 350px;
-    }
+    } */
 
     .content-wrapper p {
         font-size: 14px;
